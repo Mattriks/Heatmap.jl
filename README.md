@@ -3,6 +3,8 @@
 ## Summary
 A [Julia](https://julialang.org/) package for plotting Heatmaps with marginal dendrograms, in [Gadfly](https://github.com/GiovineItalia/Gadfly.jl/).
 
+![](images/heatmap01.png)
+
 ## Installation
 At the julia prompt:
 ```julia
