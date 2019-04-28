@@ -21,7 +21,7 @@ var documenterSearchIndex = {"docs": [
     "page": "Home",
     "title": "Introduction",
     "category": "section",
-    "text": ""
+    "text": "This is a work in progress, and currently there are errors to be fixed."
 },
 
 {
