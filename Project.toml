@@ -9,3 +9,9 @@ Compose = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
 Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
 Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
 StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
+
+[extras]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["Test"]
