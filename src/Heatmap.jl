@@ -7,11 +7,21 @@ PositionedGuide = Gadfly.Guide.PositionedGuide
 top_guide_position = Gadfly.Guide.top_guide_position
 right_guide_position = Gadfly.Guide.right_guide_position
 
+"""
+    HeatMapStatistic
 
+A Gadfly `StatisticElement` type for heatmaps.
+"""
 struct HeatMapStatistic <: Gadfly.StatisticElement
    matrix::String
    metric::Metric 
 end
+
+"""
+    heatmap(; matrix="raw", metric=Euclidean())
+
+Construct a `heatmap` type. `matrix` can be "raw" or "distance". `metric` as in package `Distances`. 
+"""
 heatmap(; matrix::String="raw", metric::Metric=Euclidean()) = HeatMapStatistic(matrix, metric)
 
 
@@ -67,11 +77,23 @@ function branches(hc::Hclust, useheight::Bool=true)
 end
 
 
+"""
+    Dendrogram
+
+A Gadfly `GuideElement` type for marginal dendrograms.
+"""
 struct Dendrogram <: Gadfly.GuideElement
     dendrogram::String
     metric::Metric
 end
-dendrogram(; dendrogram::String="row", metric::Metric=Euclidean()) = Dendrogram(dendrogram, metric)
+
+"""
+    dendrogram(; dendrogram="both", metric=Euclidean())
+
+Construct a  dendrogram guide. `dendrogram` can be "row", "column" or "both". `metric` as in package `Distances`.
+Note that currently `metric` is independent of `heatmap(matrix="distance", metric= )` hence both need to be specified if plotting a distance matrix heatmap.
+"""
+dendrogram(; dendrogram::String="both", metric::Metric=Euclidean()) = Dendrogram(dendrogram, metric)
 
 
 function Gadfly.Guide.render(guide::Dendrogram, theme::Gadfly.Theme, aes::Gadfly.Aesthetics)

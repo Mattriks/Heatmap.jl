@@ -1,11 +1,12 @@
 # Heatmap.jl
 
 ## Summary
-A [Julia](https://julialang.org/) package for Heatmaps.
+A [Julia](https://julialang.org/) package for plotting Heatmaps with marginal dendrograms, in [Gadfly](https://github.com/GiovineItalia/Gadfly.jl/).
 
 ## Installation
+At the julia prompt:
 ```julia
-Pkg.add("https://github.com/Mattriks/Heatmap.jl")
+]add https://github.com/Mattriks/Heatmap.jl
 ```
 
 ## Documentation
