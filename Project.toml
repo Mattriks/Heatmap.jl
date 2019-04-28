@@ -1,0 +1,11 @@
+name = "Heatmap"
+uuid = "b63a8aa0-6890-11e9-3d0f-2b1b4fd4fce6"
+authors = ["Mattriks <Mattriks@users.noreply.github.com>"]
+version = "0.1.0"
+
+[deps]
+Clustering = "aaaa29a8-35af-508c-8bc3-b662a17a0fe5"
+Compose = "a81c6b42-2e10-5240-aca2-a61377ecd94b"
+Distances = "b4f34e82-e78d-54a5-968a-f98e89d6e8f7"
+Gadfly = "c91e804a-d5a3-530f-b6f0-dfbca275c004"
+StatsBase = "2913bbd2-ae8a-5f71-8c99-4fb6c76f3a91"
